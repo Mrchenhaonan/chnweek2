@@ -21,7 +21,7 @@ public class TPSTest extends TestCase {
 			tps.setId(i+1);//给各标签设置值
 			tps.setName(ZHStringUtil.getZHName());//设置名字
 			tps.setAge(RandNumUtil.random(1, 100));//设置年龄
-			tps.setQian(RandNumUtil.getValue(30000, 80000, 2));//钱
+			tps.setQian(RandNumUtil.getValue(30000, 80000, 2));//钱，小数点
 			Date date=randomDate("2012-0-01", "2020-04-27");//规定时间
 			String d=(new SimpleDateFormat("yyyy.MM.dd HH:mm:ss").format(date));
 			tps.setRq(d);
